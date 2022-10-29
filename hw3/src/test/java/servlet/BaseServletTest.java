@@ -18,6 +18,8 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;
 
+import static ru.akirakozov.sd.refactoring.database.SQLiteDatabase.*;
+
 public class BaseServletTest {
     private static final int PORT = 8081;
     private static final Server server = new Server(PORT);
@@ -35,16 +37,7 @@ public class BaseServletTest {
 
     @BeforeAll
     protected static void init() throws Exception {
-        try (Connection c = DriverManager.getConnection("jdbc:sqlite:test.db")) {
-            String sql = "CREATE TABLE IF NOT EXISTS PRODUCT" +
-                    "(ID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL," +
-                    " NAME           TEXT    NOT NULL, " +
-                    " PRICE          INT     NOT NULL)";
-            Statement stmt = c.createStatement();
-
-            stmt.executeUpdate(sql);
-            stmt.close();
-        }
+        createTables();
 
         Server server = new Server(PORT);
 
@@ -60,24 +53,12 @@ public class BaseServletTest {
 
     @AfterEach
     protected void clear() throws Exception {
-        try (Connection c = DriverManager.getConnection("jdbc:sqlite:test.db")) {
-            String sql = "DELETE FROM PRODUCT";
-            Statement stmt = c.createStatement();
-
-            stmt.executeUpdate(sql);
-            stmt.close();
-        }
+        deleteTables();
     }
 
     @AfterAll
     protected static void finish() throws Exception {
-        try (Connection c = DriverManager.getConnection("jdbc:sqlite:test.db")) {
-            String sql = "DROP TABLE PRODUCT";
-            Statement stmt = c.createStatement();
-
-            stmt.executeUpdate(sql);
-            stmt.close();
-        }
+        dropTables();
         server.stop();
     }
 
