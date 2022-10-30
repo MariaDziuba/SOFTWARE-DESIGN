@@ -6,6 +6,7 @@ import org.eclipse.jetty.servlet.ServletHolder;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
+import ru.akirakozov.sd.refactoring.dao.ProductDAO;
 import ru.akirakozov.sd.refactoring.servlet.AddProductServlet;
 import ru.akirakozov.sd.refactoring.servlet.GetProductsServlet;
 import ru.akirakozov.sd.refactoring.servlet.QueryServlet;
@@ -24,6 +25,7 @@ public class BaseServletTest {
     private static final int PORT = 8081;
     private static final Server server = new Server(PORT);
     private static final HttpClient client = HttpClient.newHttpClient();
+    private static final ProductDAO productDao = new ProductDAO();
 
     protected static class Product {
         String name;
@@ -45,9 +47,9 @@ public class BaseServletTest {
         context.setContextPath("/");
         server.setHandler(context);
 
-        context.addServlet(new ServletHolder(new AddProductServlet()), "/add-product");
-        context.addServlet(new ServletHolder(new GetProductsServlet()), "/get-products");
-        context.addServlet(new ServletHolder(new QueryServlet()), "/query");
+        context.addServlet(new ServletHolder(new AddProductServlet(productDao)), "/add-product");
+        context.addServlet(new ServletHolder(new GetProductsServlet(productDao)), "/get-products");
+        context.addServlet(new ServletHolder(new QueryServlet(productDao)), "/query");
         server.start();
     }
 
