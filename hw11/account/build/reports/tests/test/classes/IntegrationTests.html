@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class IntegrationTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class IntegrationTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; IntegrationTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">6</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">21.388s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">buySeveralStocks()</td>
+<td class="success">3.636s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">buyStock()</td>
+<td class="success">9.122s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">buyStockAndChangePrice()</td>
+<td class="success">2.362s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">sellStocks()</td>
+<td class="success">2.287s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">userHasNoMoney()</td>
+<td class="success">1.862s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">userHasNoStocks()</td>
+<td class="success">2.119s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/Users/maria/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-simple/1.7.36/a41f9cfe6faafb2eb83a1c7dd2d0dfd844e2a936/slf4j-simple-1.7.36.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/Users/maria/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.2.11/4741689214e9d1e8408b206506cbe76d1c6a7d60/logback-classic-1.2.11.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[Test worker] INFO org.testcontainers.dockerclient.DockerClientProviderStrategy - Loaded org.testcontainers.dockerclient.UnixSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+[Test worker] INFO org.testcontainers.dockerclient.DockerClientProviderStrategy - Found Docker environment with local Unix socket (unix:///var/run/docker.sock)
+[Test worker] INFO org.testcontainers.DockerClientFactory - Docker host IP address is localhost
+[Test worker] INFO org.testcontainers.DockerClientFactory - Connected to docker: 
+  Server Version: 20.10.11
+  API Version: 1.41
+  Operating System: Docker Desktop
+  Total Memory: 1986 MB
+[Test worker] INFO org.testcontainers.utility.ImageNameSubstitutor - Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+[Test worker] INFO org.testcontainers.utility.RegistryAuthLocator - Credential helper/store (docker-credential-desktop) does not have credentials for index.docker.io
+[Test worker] INFO org.testcontainers.DockerClientFactory - Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+[Test worker] INFO org.testcontainers.DockerClientFactory - Checking the system...
+[Test worker] INFO org.testcontainers.DockerClientFactory - ✔︎ Docker server version should be at least 1.6.0
+[Test worker] INFO org.testcontainers.DockerClientFactory - ✔︎ Docker environment should have more than 2GB free disk space
+[Test worker] INFO &#x1f433; [exchange-emulator:1.0-SNAPSHOT] - Creating container for image: exchange-emulator:1.0-SNAPSHOT
+[Test worker] INFO &#x1f433; [exchange-emulator:1.0-SNAPSHOT] - Container exchange-emulator:1.0-SNAPSHOT is starting: 99df6eaa5a62e4e5ad6a26a3d42286efe9a643acc70961b428f128fbe8f69f04
+[Test worker] INFO &#x1f433; [exchange-emulator:1.0-SNAPSHOT] - Container exchange-emulator:1.0-SNAPSHOT started in PT1.464906S
+[Test worker] INFO ktor.test - Autoreload is disabled because the development mode is off.
+[Test worker] INFO ktor.test - Application started in 0.017 seconds.
+[Test worker] INFO &#x1f433; [exchange-emulator:1.0-SNAPSHOT] - Creating container for image: exchange-emulator:1.0-SNAPSHOT
+[Test worker] INFO &#x1f433; [exchange-emulator:1.0-SNAPSHOT] - Container exchange-emulator:1.0-SNAPSHOT is starting: d0a518f6baebacb89f68e49b28a83a4a30a32676d027012bda45bdff6c370fc1
+[Test worker] INFO &#x1f433; [exchange-emulator:1.0-SNAPSHOT] - Container exchange-emulator:1.0-SNAPSHOT started in PT2.339209S
+[Test worker] INFO ktor.test - Autoreload is disabled because the development mode is off.
+[Test worker] INFO ktor.test - Application started in 0.001 seconds.
+[Test worker] INFO &#x1f433; [exchange-emulator:1.0-SNAPSHOT] - Creating container for image: exchange-emulator:1.0-SNAPSHOT
+[Test worker] INFO &#x1f433; [exchange-emulator:1.0-SNAPSHOT] - Container exchange-emulator:1.0-SNAPSHOT is starting: 91c28138aa832db94e27a955014d0dbc6634c344b2d194a63a75df7a416f477e
+[Test worker] INFO &#x1f433; [exchange-emulator:1.0-SNAPSHOT] - Container exchange-emulator:1.0-SNAPSHOT started in PT1.074032S
+[Test worker] INFO ktor.test - Autoreload is disabled because the development mode is off.
+[Test worker] INFO ktor.test - Application started in 0.0 seconds.
+[Test worker] INFO &#x1f433; [exchange-emulator:1.0-SNAPSHOT] - Creating container for image: exchange-emulator:1.0-SNAPSHOT
+[Test worker] INFO &#x1f433; [exchange-emulator:1.0-SNAPSHOT] - Container exchange-emulator:1.0-SNAPSHOT is starting: 7f15ee8b648f81545f2f07a0dc0ed74b1295416b1c7a4313476d6cd83fb26c05
+[Test worker] INFO &#x1f433; [exchange-emulator:1.0-SNAPSHOT] - Container exchange-emulator:1.0-SNAPSHOT started in PT1.144854S
+[Test worker] INFO ktor.test - Autoreload is disabled because the development mode is off.
+[Test worker] INFO ktor.test - Application started in 0.001 seconds.
+[Test worker] INFO &#x1f433; [exchange-emulator:1.0-SNAPSHOT] - Creating container for image: exchange-emulator:1.0-SNAPSHOT
+[Test worker] INFO &#x1f433; [exchange-emulator:1.0-SNAPSHOT] - Container exchange-emulator:1.0-SNAPSHOT is starting: 77e408de1d2a3495ed301b9d4a654259598e6ae0d058bb261230a94cc40ab21e
+[Test worker] INFO &#x1f433; [exchange-emulator:1.0-SNAPSHOT] - Container exchange-emulator:1.0-SNAPSHOT started in PT1.071583S
+[Test worker] INFO ktor.test - Autoreload is disabled because the development mode is off.
+[Test worker] INFO ktor.test - Application started in 0.001 seconds.
+[Test worker] INFO &#x1f433; [exchange-emulator:1.0-SNAPSHOT] - Creating container for image: exchange-emulator:1.0-SNAPSHOT
+[Test worker] INFO &#x1f433; [exchange-emulator:1.0-SNAPSHOT] - Container exchange-emulator:1.0-SNAPSHOT is starting: a049c7a545ad530022475d4dd9d742ceecb6c245d53c69cb1b53b69b2c14eea8
+[Test worker] INFO &#x1f433; [exchange-emulator:1.0-SNAPSHOT] - Container exchange-emulator:1.0-SNAPSHOT started in PT1.440821S
+[Test worker] INFO ktor.test - Autoreload is disabled because the development mode is off.
+[Test worker] INFO ktor.test - Application started in 0.0 seconds.
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.2</a> at 3 мар. 2023 г., 19:53:39</p>
+</div>
+</div>
+</body>
+</html>

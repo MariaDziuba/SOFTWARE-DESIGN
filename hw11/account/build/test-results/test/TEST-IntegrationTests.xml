@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="IntegrationTests" tests="6" skipped="0" failures="0" errors="0" timestamp="2023-03-03T14:53:17" hostname="192.168.0.9" time="21.414">
+  <properties/>
+  <testcase name="buyStock()" classname="IntegrationTests" time="9.122"/>
+  <testcase name="buySeveralStocks()" classname="IntegrationTests" time="3.636"/>
+  <testcase name="sellStocks()" classname="IntegrationTests" time="2.287"/>
+  <testcase name="buyStockAndChangePrice()" classname="IntegrationTests" time="2.362"/>
+  <testcase name="userHasNoMoney()" classname="IntegrationTests" time="1.862"/>
+  <testcase name="userHasNoStocks()" classname="IntegrationTests" time="2.119"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/Users/maria/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-simple/1.7.36/a41f9cfe6faafb2eb83a1c7dd2d0dfd844e2a936/slf4j-simple-1.7.36.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/Users/maria/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.2.11/4741689214e9d1e8408b206506cbe76d1c6a7d60/logback-classic-1.2.11.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[Test worker] INFO org.testcontainers.dockerclient.DockerClientProviderStrategy - Loaded org.testcontainers.dockerclient.UnixSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+[Test worker] INFO org.testcontainers.dockerclient.DockerClientProviderStrategy - Found Docker environment with local Unix socket (unix:///var/run/docker.sock)
+[Test worker] INFO org.testcontainers.DockerClientFactory - Docker host IP address is localhost
+[Test worker] INFO org.testcontainers.DockerClientFactory - Connected to docker: 
+  Server Version: 20.10.11
+  API Version: 1.41
+  Operating System: Docker Desktop
+  Total Memory: 1986 MB
+[Test worker] INFO org.testcontainers.utility.ImageNameSubstitutor - Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+[Test worker] INFO org.testcontainers.utility.RegistryAuthLocator - Credential helper/store (docker-credential-desktop) does not have credentials for index.docker.io
+[Test worker] INFO org.testcontainers.DockerClientFactory - Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+[Test worker] INFO org.testcontainers.DockerClientFactory - Checking the system...
+[Test worker] INFO org.testcontainers.DockerClientFactory - ✔︎ Docker server version should be at least 1.6.0
+[Test worker] INFO org.testcontainers.DockerClientFactory - ✔︎ Docker environment should have more than 2GB free disk space
+[Test worker] INFO ]]>&#x1f433;<![CDATA[ [exchange-emulator:1.0-SNAPSHOT] - Creating container for image: exchange-emulator:1.0-SNAPSHOT
+[Test worker] INFO ]]>&#x1f433;<![CDATA[ [exchange-emulator:1.0-SNAPSHOT] - Container exchange-emulator:1.0-SNAPSHOT is starting: 99df6eaa5a62e4e5ad6a26a3d42286efe9a643acc70961b428f128fbe8f69f04
+[Test worker] INFO ]]>&#x1f433;<![CDATA[ [exchange-emulator:1.0-SNAPSHOT] - Container exchange-emulator:1.0-SNAPSHOT started in PT1.464906S
+[Test worker] INFO ktor.test - Autoreload is disabled because the development mode is off.
+[Test worker] INFO ktor.test - Application started in 0.017 seconds.
+[Test worker] INFO ]]>&#x1f433;<![CDATA[ [exchange-emulator:1.0-SNAPSHOT] - Creating container for image: exchange-emulator:1.0-SNAPSHOT
+[Test worker] INFO ]]>&#x1f433;<![CDATA[ [exchange-emulator:1.0-SNAPSHOT] - Container exchange-emulator:1.0-SNAPSHOT is starting: d0a518f6baebacb89f68e49b28a83a4a30a32676d027012bda45bdff6c370fc1
+[Test worker] INFO ]]>&#x1f433;<![CDATA[ [exchange-emulator:1.0-SNAPSHOT] - Container exchange-emulator:1.0-SNAPSHOT started in PT2.339209S
+[Test worker] INFO ktor.test - Autoreload is disabled because the development mode is off.
+[Test worker] INFO ktor.test - Application started in 0.001 seconds.
+[Test worker] INFO ]]>&#x1f433;<![CDATA[ [exchange-emulator:1.0-SNAPSHOT] - Creating container for image: exchange-emulator:1.0-SNAPSHOT
+[Test worker] INFO ]]>&#x1f433;<![CDATA[ [exchange-emulator:1.0-SNAPSHOT] - Container exchange-emulator:1.0-SNAPSHOT is starting: 91c28138aa832db94e27a955014d0dbc6634c344b2d194a63a75df7a416f477e
+[Test worker] INFO ]]>&#x1f433;<![CDATA[ [exchange-emulator:1.0-SNAPSHOT] - Container exchange-emulator:1.0-SNAPSHOT started in PT1.074032S
+[Test worker] INFO ktor.test - Autoreload is disabled because the development mode is off.
+[Test worker] INFO ktor.test - Application started in 0.0 seconds.
+[Test worker] INFO ]]>&#x1f433;<![CDATA[ [exchange-emulator:1.0-SNAPSHOT] - Creating container for image: exchange-emulator:1.0-SNAPSHOT
+[Test worker] INFO ]]>&#x1f433;<![CDATA[ [exchange-emulator:1.0-SNAPSHOT] - Container exchange-emulator:1.0-SNAPSHOT is starting: 7f15ee8b648f81545f2f07a0dc0ed74b1295416b1c7a4313476d6cd83fb26c05
+[Test worker] INFO ]]>&#x1f433;<![CDATA[ [exchange-emulator:1.0-SNAPSHOT] - Container exchange-emulator:1.0-SNAPSHOT started in PT1.144854S
+[Test worker] INFO ktor.test - Autoreload is disabled because the development mode is off.
+[Test worker] INFO ktor.test - Application started in 0.001 seconds.
+[Test worker] INFO ]]>&#x1f433;<![CDATA[ [exchange-emulator:1.0-SNAPSHOT] - Creating container for image: exchange-emulator:1.0-SNAPSHOT
+[Test worker] INFO ]]>&#x1f433;<![CDATA[ [exchange-emulator:1.0-SNAPSHOT] - Container exchange-emulator:1.0-SNAPSHOT is starting: 77e408de1d2a3495ed301b9d4a654259598e6ae0d058bb261230a94cc40ab21e
+[Test worker] INFO ]]>&#x1f433;<![CDATA[ [exchange-emulator:1.0-SNAPSHOT] - Container exchange-emulator:1.0-SNAPSHOT started in PT1.071583S
+[Test worker] INFO ktor.test - Autoreload is disabled because the development mode is off.
+[Test worker] INFO ktor.test - Application started in 0.001 seconds.
+[Test worker] INFO ]]>&#x1f433;<![CDATA[ [exchange-emulator:1.0-SNAPSHOT] - Creating container for image: exchange-emulator:1.0-SNAPSHOT
+[Test worker] INFO ]]>&#x1f433;<![CDATA[ [exchange-emulator:1.0-SNAPSHOT] - Container exchange-emulator:1.0-SNAPSHOT is starting: a049c7a545ad530022475d4dd9d742ceecb6c245d53c69cb1b53b69b2c14eea8
+[Test worker] INFO ]]>&#x1f433;<![CDATA[ [exchange-emulator:1.0-SNAPSHOT] - Container exchange-emulator:1.0-SNAPSHOT started in PT1.440821S
+[Test worker] INFO ktor.test - Autoreload is disabled because the development mode is off.
+[Test worker] INFO ktor.test - Application started in 0.0 seconds.
+]]></system-err>
+</testsuite>
